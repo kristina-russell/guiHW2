@@ -1,0 +1,121 @@
+/* File: pacific.css
+GUI Assignment: HW2
+Description: In this assignment we had to work with a CSS file to format an existing HTML file. We needed to edit our styling so that it matched the 
+				captures given to us in the HW2_read folder. The trick to this assignmnet was to eventually figure out that the "columns" were actually
+				not done with the use of a flexbox, grid, or any other means, but actually by utilizing margins and padding in order to achieve the
+				desired look by layering elements.
+Copyright (c) 2023 Kristina Russell. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author. */
+
+* {
+	box-sizing: border-box;
+}
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+	background-image: url('ptrbackground.jpg');
+	background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* Background color of entire box is set to a light blue
+	and then the width is set to 80% of the avalible space
+	margin 0 auto centers all the elements */
+#wrapper {
+	background-color: rgb(150, 194, 233);
+	width: 80%;
+	min-width: 600px;
+	margin: 0 auto;
+}
+/* Make the text white and the background matches the fade
+	of the picture. Insert the pic, make sure it doesn't
+	repeat, and send it to the far right of the header box. */
+header {
+	color: white;
+	background-color: rgb(1, 2, 50);
+	background-image: url('sunset.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+}
+/* Added some padding and floated it left */
+nav {
+	padding: 10px;
+	float: left;
+}
+/* Got rid of the bullet points */
+nav ul {
+	font-size: 1.2em;
+	list-style: none;
+}
+/* Made font bold and got rid of underline */
+nav a {
+	color:#000033;
+	font-weight: bolder;
+	text-decoration: none;
+}
+/* Changed clicked color to white */
+nav a:visited {
+	color: white;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+/* Content box set to white and give it a margin so that
+	it can sit to the right of the nav area. Padding also added  */
+#content{
+	background-color: white;
+	margin-left: 200px;
+	padding: 10px 0px 20px 20px;
+}
+/* Image will now stay left and have a margin so that the text will
+	not be touching the image. */
+#content img {
+	float: left;
+	margin-right: 40px;
+}
+/* Replaced bullet points with the marker image and lines it up */
+#content ul {
+	list-style-image: url("marker.gif");
+    list-style-position: inside;
+}
+/* Make sure the font size is correct for this resort */
+#content .resort {
+	font-size: 1.2em;
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+/* Smaller font and make sure the .resort info has a text size that matches */
+#contact {
+	font-size: 90%;
+}
+#contact .resort {
+	font-size: 15px;
+}
+/* Set both resorts to be bolded and this light blue color */
+.resort {
+	font-weight: bold;
+	color:#3399CC;
+}
+dt {
+	color: #000033;
+}
+/* Do the same thing we did for the #content to move it to the side.
+	italisize the font, give it a white background color, add the same
+	margins as the #content and add some padding for formatting */
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	background-color:white;
+	font-style: italic;
+	margin-left: 200px;
+	padding: 0px 0px 20px 20px;
+}
